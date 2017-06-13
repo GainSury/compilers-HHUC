@@ -15,8 +15,14 @@ char lookhead;
 
 int main()
 {
-	lookhead = getchar();
-    E();
+	while (1)
+	{
+		printf("ready>");
+		lookhead = getchar();
+		E();
+		printf("suucced\n");
+	}
+	
 }
 
 void match(char t)
